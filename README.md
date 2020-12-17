@@ -1,4 +1,4 @@
-# DNSEC.NET | CC8PRO PROJECT
+# DNSEC.NET 
 Private Hybird Network Connection Powered Cloudflare Server
 
 Nb
