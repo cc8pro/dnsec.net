@@ -16,7 +16,7 @@ async function gatherResponse(response) {
   if (contentType.includes("application/json")) {
     return JSON.stringify(await response.json())
   }
-  else if (contentType.includes("application/text")) {
+  else if (contentType.includes("application/json")) {
     return await response.text()
   }
   else if (contentType.includes("text/html")) {
@@ -30,7 +30,7 @@ async function gatherResponse(response) {
 async function handleRequest() {
   const init = {
     headers: {
-      "content-type": "text/html;Application/json",
+      "content-type": "Application/json",
     },
   }
   const response = await fetch(url, init)
